@@ -1,0 +1,20 @@
+#leaderboard {
+    margin-top: 20px;
+    text-align: center;
+}
+#leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    outline: var(--color-AzulNormal);
+}
+#leaderboard th, #leaderboard td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+#leaderboard th {
+    background-color: var(--color-AzulNormal);
+    color: white;
+    border-radius: 8px;
+}

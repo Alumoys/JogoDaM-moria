@@ -1,0 +1,18 @@
+@import url('./variaveis.css');
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 12px;
+    padding: 10px;
+}
+
+.seletores{
+    padding: 10px;
+    border-radius: 8px;
+}
