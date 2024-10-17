@@ -1,0 +1,43 @@
+@import url('./variaveis.css');
+
+/* === div pai, controle === */
+.controles{
+    width: 500px;
+    height: 100px;
+    padding: 12px;
+    margin: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 40px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+/* seletor de temas */
+.seletores{
+    padding: 6px;
+    border-radius: 8px;
+    background-color: var(--color-botoes);
+    font-size: medium;
+}
+/* Estilizando as opções */
+.seletores option {
+    background-color: var(--color-branco); 
+    color: var(--color-texto) ;
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+}
+  
+  /* Quando o select estiver em foco (clicado) */
+.seletores:focus {
+    border-color: var(--color-branco); 
+}
+
+/* estilização do seletor difilculdade */
+#seleto-dificuldade{
+    padding: 6px;
+    border-radius: 8px;
+}
