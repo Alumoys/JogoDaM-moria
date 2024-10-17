@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link
+        rel="shortcut icon"
+        href="./assets/img/random_2263464.png"
+        type="image/x-icon"
+    />
+    <title>Jogo da Memória</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Jogo da Memória</div>
+    </header>
+    <main id="game-container">
+        <!-- Controles de jogabilidade -->
+        <div class="controls">
+            <!-- temas de jogo -->
+            <div class="generico">
+                <span>Temas</span>
+                <select id="theme-select" class="seletores">
+                    <option value="emojis">Emojis</option>
+                    <option value="animals">Animais</option>
+                    <option value="fruits">Frutas</option>
+                    <option value="plants">Plantas</option>
+                </select>
+            </div>
+            <!-- seletor de dificuldade -->
+            <div class="generico">
+                <span>Dificuldade</span>
+                <select id="difficulty-select" class="seletores">
+                    <option value="easy">Fácil (4x4)</option>
+                    <option value="medium">Médio (6x6)</option>
+                    <option value="hard">Difícil (8x8)</option>
+                </select>
+            </div>
+
+            <!-- botões de controle do jogo -->
+            <div class="generico">
+                <span>Modo</span>
+                <button id="toggle-mode" class="btns">Modo: 1 Jogador</button>
+            </div>
+        </div>
+        <div class="stard">
+            <button id="start-game" class="btns">Iniciar Jogo</button>
+            <button id="reset-game" class="btns">Reiniciar</button>
+        </div>
+
+        <!-- Informações do jogo -->
+        <div id="game-info" class="stard">
+            <div id="tempo">Tempo: 0s</div>
+            <div id="movimentos">Movimentos: 0</div>
+            <div id="pontuacao">Pontuação: 0</div>
+        </div>
+        
+        <!-- Informações dos jogadores -->
+        <div id="players-info"></div>
+        
+        <!-- Tabuleiro do jogo -->
+        <div id="game-board"></div>
+        
+        <!-- Tabela de Classificados -->
+        <div id="leaderboard">
+            <h2>Melhores Pontuações</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Colocação</th>
+                        <th>Nome</th>
+                        <th>Pontuação</th>
+                    </tr>
+                </thead>
+                <tbody id="tabeladeclassificacao-corpo"></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="./assets/js/logica.js"></script>
+</body>
+</html>
