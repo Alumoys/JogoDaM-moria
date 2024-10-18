@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/random_2263464.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <title>It's Game</title>
+</head>
+<body>
+    <audio id="acerto" src="./assets/aud/acerto.mp3"></audio>
+    <audio id="erro" src="./assets/aud/erro.mp3"></audio>
+    <header>
+        <span class="logo">Jogo da Memória</span>
+    </header>
+
+    <main>
+        <div id="game-container">
+            <div id="controls">
+                <span class="title-control">Painel de controle</span>
+                <div class="organize">
+                    <select id="theme-select">
+                        <option value="emojis">Emojis</option>
+                        <option value="animais">Animais</option>
+                        <option value="frutas">Frutas</option>
+                        <option value="plantas">Plantas</option>
+                        <option value="comida">Comida</option>
+                    </select>
+
+                    <select id="difficulty-select">
+                        <option value="easy">Fácil (4x4)</option>
+                        <option value="medium">Médio (6x6)</option>
+                        <option value="hard">Difícil (8x8)</option>
+                    </select>
+
+                    <button id="toggle-mode">Modo: 1 Jogador</button>
+                </div>
+                <div class="organize">
+                    <button id="start-game">Iniciar Jogo</button>
+                    <button id="reset-game">Reiniciar</button>    
+                </div>
+            </div>
+            <div id="game-info">
+                <div id="timer">Tempo: 0s</div>
+                <div id="moves">Movimentos: 0</div>
+                <div id="score">Pontuação: 0</div>
+            </div>
+            <div id="players-info"></div>
+            <div id="game-board"></div>
+            
+            <div id="player-name-input" class="hidden">
+                <p>Você entrou para o ranking! Digite seu nome:</p>
+                <input type="text" id="player-name" class="input" placeholder="Digite seu nome">
+                <button id="submit-name">Enviar</button>
+            </div>
+        </div>
+        <div id="leaderboard">
+            <h2>Melhores Pontuações</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Nome</th>
+                        <th>Pontuação</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-body"></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="./assets/js/logica.js"></script>
+</body>
+</html>
