@@ -1,0 +1,21 @@
+#leaderboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+}
+#leaderboard table {
+    width: 400px;
+    border-collapse: collapse;
+}
+#leaderboard th, #leaderboard td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+#leaderboard th {
+    background-color: #015958;
+    border-radius: 8px;
+    color: white;
+}

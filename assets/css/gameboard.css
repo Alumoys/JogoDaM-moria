@@ -1,0 +1,51 @@
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#game-board {
+    display: grid;
+    grid-template-columns: 24(1fr);
+    grid-template-rows: 24(1fr);
+    gap: 10px;
+    justify-content: center;
+    
+}
+.card {
+    width: 75px;
+    height: 100px;
+    background-color: #F29F05;
+    border: 4px solid #F28705;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card-content {
+    font-size: 2em;
+    color: white;
+    display: none;
+}
+.flipped .card-content {
+    display: block;
+}
+.flipped {
+    background-color: #FBC200;
+}
+.matched {
+    border: 4px solid #0F5959 ;
+    background-color: #107361;
+    cursor: default;
+}
+
+.notmatched {
+    border: 4px solid #73030D;
+    background-color: #BF0413;
+    cursor: default;
+}

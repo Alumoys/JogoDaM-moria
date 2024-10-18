@@ -1,0 +1,33 @@
+
+.placar-players{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #015958;
+    border-radius: 8px;
+    width: 400px;
+    padding: 10px;
+}
+
+.placas{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#players-info {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.player-info {
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+.current-player {
+    background-color: #015958;
+    color: white;
+}
