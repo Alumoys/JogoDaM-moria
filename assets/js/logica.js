@@ -257,16 +257,16 @@ function displayLeaderboard() {
     `).join('');
 }
 
-function displayLeaderboard() {
-    const leaderboard = JSON.parse(localStorage.getItem('memoryGameLeaderboard') || '[]');
-    leaderboardBody.innerHTML = leaderboard.map((entry, index) => `
-        <tr>
-            <td>${index + 1}</td>
-            <td>${entry.name}</td>
-            <td>${entry.score}</td>
-        </tr>
-    `).join('');
-}
+// function displayLeaderboard() {
+//     const leaderboard = JSON.parse(localStorage.getItem('memoryGameLeaderboard') || '[]');
+//     leaderboardBody.innerHTML = leaderboard.map((entry, index) => `
+//         <tr>
+//             <td>${index + 1}</td>
+//             <td>${entry.name}</td>
+//             <td>${entry.score}</td>
+//         </tr>
+//     `).join('');
+// }
 
 
 
